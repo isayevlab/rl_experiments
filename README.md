@@ -49,6 +49,6 @@ Notes on egfr_demo.py:
 This is a training routine for reinforcement learning to generate molecules with predicted activity against EGFR. It requires several pre-loaded files... relevant lines are listed below.
 - Line 97: Default path for replay data ('./data/replay_data.smi')
 - Line 98: Default path to load pre-trained RL model ('./checkpoints/generator/checkpoint_batch_training')
-- Line 107: Path for data used for training ('./data/chembl_22_clean_1576904_sorted_std_final.smi')
-- Line 147: Path to load pre-trained classifier model for EGFR activity prediction ('../project/checkpoints/predictor/egfr_rfc')
-- Line 14
+- Line 105: Path for data used for training ('./data/chembl_22_clean_1576904_sorted_std_final.smi')
+- Line 145: Path to load pre-trained classifier model for EGFR activity prediction ('../project/checkpoints/predictor/egfr_rfc')
+- Line 295: Path to load experimental EGFR data for comparisons ('../project/datasets/egfr_with_pubchem1.csv')
