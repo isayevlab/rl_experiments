@@ -111,11 +111,11 @@ def main(**kwargs):
                              cols_to_read=[0], keep_header=True, tokens=tokens)
 
     # Loading the predictor
-    model_instance = RFC
-    model_params = {'n_estimators': 200,
-                    'min_samples_leaf': 2}
-    predictor = VanillaQSAR(model_instance=model_instance, model_params=model_params)
-    predictor.load_model('../project/checkpoints/predictor/cdk1_rfc_augmented')
+    #model_instance = RFC
+    #model_params = {'n_estimators': 200,
+    #                'min_samples_leaf': 2}
+    #predictor = VanillaQSAR(model_instance=model_instance, model_params=model_params)
+    #predictor.load_model('../project/checkpoints/predictor/cdk1_rfc_augmented')
 
     # Setting up the generative model
     hidden_size = 1500
@@ -130,8 +130,8 @@ def main(**kwargs):
                                          has_stack=True, stack_width=stack_width, stack_depth=stack_depth,
                                          use_cuda=use_cuda,
                                          optimizer_instance=optimizer, lr=lr)
-    model_path = './checkpoints/generator/checkpoint_batch_training'
-    generator.load_model(model_path)
+    #model_path = './checkpoints/generator/checkpoint_batch_training'
+    #generator.load_model(model_path)
     # Faster: use a model pre-trained on active molecules 
     primed_path = params['primed_path']
     generator.load_model(primed_path)
