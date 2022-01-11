@@ -1,0 +1,7 @@
+{
+	'n_policy': 15,
+	'n_policy_replay': 10,
+        'n_fine_tune': 20,
+        'seed': 2
+}
+

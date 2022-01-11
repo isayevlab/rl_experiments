@@ -1,0 +1,11 @@
+{ 
+	'n_policy': 15,
+        'n_policy_replay': 10,
+        'primed_path,replay_data_path': [('../checkpoints/generator/checkpoint_batch_training',
+                                          '../data/gen_actives.smi'),
+                                         ('../checkpoints/generator/egfr_clf_rnn_primed',
+                                          '../data/gen_actives.smi'),
+                                         ('../checkpoints/generator/egfr_clf_rnn_enamine_primed',
+                                          '../data/egfr_enamine.smi')],
+	'seed': 2
+}

@@ -1,0 +1,9 @@
+{
+	'n_policy': 15,
+	'n_policy_replay': 10,
+	'replay_data_path': ['../data/empty.smi',
+			     '../data/gen_actives.smi',
+			     '../data/egfr_enamine.smi',
+			     '../data/egfr_mixed.smi'],
+	'seed': 2
+}
